@@ -7025,6 +7025,28 @@ textarea.form-control-lg {
   display: grid !important;
 }
 
+.bttt {
+  background-color: forestgreen;
+  border: none;
+  justify-items: center;
+  border-radius: 5px;
+
+}
+
+.bttt:hover {
+  background-color: #fff;
+}
+
+.btt {
+  justify-content: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btt:hover {
+  color: forestgreen;
+}
+
 .d-table {
   display: table !important;
 }
