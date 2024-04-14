@@ -588,16 +588,19 @@ progress {
 
 .img-fluid {
   max-width: 100%;
-  height: 500px;
+  height: auto;
   justify-self: auto;
 }
+
 .img-fluid-1 {
   max-width: 100%;
-  height: 50%;
+  height: auto;
+  justify-self: auto;
 }
 .img-fluid-2 {
   max-width: 100%;
-  height: 50%;
+  height: auto;
+  justify-self: auto;
 }
 .sub {
   text-decoration: none;
