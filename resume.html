@@ -69,9 +69,9 @@
                             <!-- Language selector -->
                             <div class="mb-4">
                                 <select id="language" onchange="updateCVLink()" class="form-select">
-                                    <option value="en">CV Maycon Pacheco-English</option>
                                     <option value="pt">CV Maycon Pacheco-Portuguese</option>
                                     <option value="es">CV Maycon Pacheco-Spanish</option>
+                                    <option value="en">CV Maycon Pacheco-English</option>
                                 </select>
                             </div>
                             
@@ -83,15 +83,15 @@
                                     const selectedLanguage = languageSelector.value;
                             
                                     // Update the href attribute of the CV download link based on selected language
-                                    if (selectedLanguage === 'en') {
-                                        cvLink.href = 'assets/CV - MAYCON PACHECO - ENGLISH.pdf';
-                                        cvLink.download = 'CV - MAYCON PACHECO - ENGLISH.pdf';
-                                    } else if (selectedLanguage === 'pt') {
+                                    if (selectedLanguage === 'pt') {
                                         cvLink.href = 'assets/CV - MAYCON PACHECO - PORTUGUESE.pdf';
                                         cvLink.download = 'CV - MAYCON PACHECO - PORTUGUESE.pdf';
-                                    } else if (selectedLanguage === 'es') {
+                                    } else if (selectedLanguage === 'es') {                           
                                         cvLink.href = 'assets/CV - MAYCON PACHECO - SPANISH.pdf';
                                         cvLink.download = 'CV - MAYCON PACHECO - SPANISH.pdf';
+                                    } else if (selectedLanguage === 'en') {
+                                        cvLink.href = 'assets/CV - MAYCON PACHECO - ENGLISH.pdf';
+                                        cvLink.download = 'CV - MAYCON PACHECO - ENGLISH.pdf';
                                     }
                                 }
                             </script>
