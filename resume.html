@@ -59,11 +59,36 @@
                                 <h2 class="text-primary fw-bolder mb-0">Experiências</h2>
                                 <!-- Download resume button-->
                                 <!-- Note: Set the link href target to a PDF file within your project-->
-                                <a class="btn btn-primary px-4 py-3" download target="_self" href="assets\CURRÍCULO - MAYCON PACHECO.pdf">
-                                    <div class="d-inline-block bi bi-download me-2" ></div>
+                                <a class="btn btn-primary px-4 py-3" id="download-cv" download target="_self">
+                                    <div class="d-inline-block bi bi-download me-2"></div>
                                     Baixar CV
                                 </a>
+                                <!-- Language selector -->
+                                <select id="language" onchange="updateCVLink()">
+                                    <option value="en">CV Maycon Pacheco-English</option>
+                                    <option value="pt">CV Maycon Pacheco-Portuguese</option>
+                                    <option value="es">CV Maycon Pacheco-Spanish</option>
+                                </select>
                             </div>
+                        
+                            <script>
+                                // Function to update CV download link based on selected language
+                                function updateCVLink() {
+                                    const languageSelector = document.getElementById('language');
+                                    const cvLink = document.getElementById('download-cv');
+                                    const selectedLanguage = languageSelector.value;
+
+                                    // Update the href attribute of the CV download link based on selected language
+                                    if (selectedLanguage === 'en') {
+                                        cvLink.href = 'assets/CV - MAYCON PACHECO - ENGLISH.pdf';
+                                    } else if (selectedLanguage === 'pt') {
+                                        cvLink.href = 'assets/CV - MAYCON PACHECO - PORTUGUESE.pdf';
+                                    } else if (selectedLanguage === 'es') {
+                                        cvLink.href = 'assets/CV - MAYCON PACHECO - SPANISH.pdf';
+                                    }
+                                }
+                            </script>
+                        
                             <!-- Experience Card 1-->
                             <div class="card shadow border-0 rounded-4 mb-5">
                                 <div class="card-body p-5">
