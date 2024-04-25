@@ -605,6 +605,7 @@ progress {
 .sub {
   text-decoration: none;
   color: #000;
+
 }
 .sub:hover {
   color: var(--bs-purple);
@@ -3611,7 +3612,6 @@ textarea.form-control-lg {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-
 .nav {
   --bs-nav-link-padding-x: 1rem;
   --bs-nav-link-padding-y: 0.5rem;
