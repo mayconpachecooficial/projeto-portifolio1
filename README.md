@@ -1,3 +1,3 @@
 ✔✔DEPLOY✔✔
 
-https://vercel-portifolio-zeta.vercel.app/index.html
+https://projeto-website1.vercel.app/
